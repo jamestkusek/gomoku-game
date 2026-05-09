@@ -8,14 +8,15 @@ import gui
 GRID_SIZE = 15
 
 
-gui.draw_game_board()
+
 def main():
-    print("New Gomoku Game...p1 is black, p2 is white\n")
-    while True:
-        gameplay()
+    #gui.main_menu()
+    gameplay()
+
 
 
 def gameplay():
+    gui.draw_game_board()
     board = Board()
     win = False
     current_player = 1
@@ -40,7 +41,7 @@ def gameplay():
                     else:
                         print("cell already occupied")
 
-    print(str(current_player) + " wins !")
+    print("Player " + str(current_player) + " wins !")
     gui.draw_game_board()
     #gui.end_game_menu()
 

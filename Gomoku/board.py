@@ -39,7 +39,6 @@ class Board:
 
         while 0 <= x < GRID_SIZE and 0 <= y < GRID_SIZE and self.grid[y][x] == piece:
             count += 1
-            print(count)
             x += dx
             y += dy
         return count
